@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/main_button"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/list_notif_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_siren"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/list_notif_judul"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/list_notif_icon"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="XXXXX"
+        />
+    <TextView
+        android:id="@+id/list_notif_message"
+        android:layout_below="@id/list_notif_judul"
+        android:layout_alignStart="@id/list_notif_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ada perampokan di cabang buah batu"
+        />
+
+    <ImageView
+        android:id="@+id/list_notif_isread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="false"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_notread"
+        />
+
+</RelativeLayout>

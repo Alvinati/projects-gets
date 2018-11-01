@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Maybank SS Report Admin</string>
+    <string name="title_report">Report</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_users">Users</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_pict">Profile Picture</string>
+    <string name="kata_sandi_baru">kata sandi baru</string>
+    <string name="ulangi_kata_sandi">ulangi kata sandi</string>
+    <string name="download">download</string>
+
+    <string-array name="bulan">
+        <item>All</item>
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+
+    <string-array name="group">
+        <item>Vendor</item>
+        <item>CMS</item>
+    </string-array>
+
+    <string-array name="user">
+        <item>Admin</item>
+        <item>End User</item>
+    </string-array>
+
+    <string-array name="region">
+        <item>Sumatera Utara</item>
+        <item>Sumatera Selatan</item>
+        <item>Jawa Barat</item>
+        <item>Jakarta 1</item>
+        <item>Jakarta 2</item>
+        <item>Jateng</item>
+        <item>Jatim dan Bali Nusra</item>
+        <item>Kalimantan</item>
+        <item>Sulawesi dan IBT</item>
+    </string-array>
+</resources>

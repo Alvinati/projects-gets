@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/pilihan_servis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_brightness_1_black_24dp"
+            android:contentDescription="@string/dot"
+            />
+
+        <TextView
+            android:id="@+id/servis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:textAppearanceListItem"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="14sp"
+            android:text="Sparepart"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/lay_jumlah"
+        android:layout_below="@id/pilihan_servis"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="?android:textAppearanceSmall"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah:" />
+
+        <TextView
+            android:id="@+id/nama_produk"
+            style="?android:textAppearanceSmall"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 " />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/lay_jumlah"
+        android:layout_below="@id/pilihan_servis"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="?android:textAppearanceSmall"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga: Rp" />
+
+        <TextView
+            android:id="@+id/text_uid"
+            style="?android:textAppearanceSmall"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20000 " />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

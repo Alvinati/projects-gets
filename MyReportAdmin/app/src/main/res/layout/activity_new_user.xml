@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/colorPrimaryDark"
+    tools:context="id.co.mine.myreportadmin.main.NewUserActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Daftar User Baru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/TextAppearance.AppCompat.Medium"
+            />
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:text="Username"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:text=" : "
+                    android:textColor="@android:color/black"
+                    />
+                <EditText
+                    android:id="@+id/reg_et_username"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textSize="12sp"
+                    android:hint="John"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:text="Nama Lengkap"
+                    android:layout_width="0dp"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:textColor="@android:color/black"
+                    android:text=" : "
+                    />
+                <EditText
+                    android:id="@+id/reg_et_nama"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textSize="12sp"
+                    android:hint="John Doe"
+                    />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:text="Email"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:text=" : "
+                    android:textColor="@android:color/black"
+                    />
+                <EditText
+                    android:id="@+id/reg_et_email"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textSize="12sp"
+                    android:inputType="textEmailAddress"
+                    android:hint="john_doe@gmail.com"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:text="Password"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:text=": "
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <EditText
+                    android:id="@+id/reg_et_password"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textSize="12sp"
+                    android:inputType="textPassword"
+                    android:hint="******"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:padding="5dp"
+                    android:text="Confirm Password"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:text=": "
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <EditText
+                    android:id="@+id/reg_et_conf"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textSize="12sp"
+                    android:inputType="textPassword"
+                    android:hint="******"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:padding="5dp"
+                    android:text="TOKEN"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:text=": "
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <EditText
+                    android:id="@+id/reg_et_token"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textSize="12sp"
+                    android:inputType="textPassword"
+                    />
+            </TableRow>
+        </TableLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_daftar"
+            android:layout_width="70dp"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@android:color/white"
+            android:indeterminateTint="@color/colorAccent"
+            android:indeterminate="true"
+            />
+
+        <TextView
+            android:id="@+id/btn_daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/custom_button"
+            />
+    </LinearLayout>
+</RelativeLayout>

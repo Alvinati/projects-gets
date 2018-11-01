@@ -1,0 +1,258 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/pb_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:backgroundTint="@android:color/white"
+        android:indeterminateTint="@color/colorAccent"
+        android:indeterminate="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/card1"
+        style="@style/LinearLayoutTab"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            style="@style/TextTitle"
+            android:text="Data Booking Servis"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            android:background="#fafafa"
+            >
+            <TextView
+                android:text="Tanggal"
+                android:textAllCaps="false"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/txt_r_tanggal"
+                android:text="20 Sept 2018"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:background="#fafafa"
+            >
+            <TextView
+                android:text="Jenis Servis"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/txt_r_servis"
+                android:text="Checking 20000 KM"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:background="#fafafa"
+            >
+            <TextView
+                android:text="Mobil"
+                android:textAllCaps="false"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/txt_r_mobil"
+                android:text="Innova"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/LinearLayoutTab"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            style="@style/TextTitle"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="20dp"
+            android:text="Biaya Servis"/>
+
+        <TableLayout
+            android:id="@+id/rpt_tbl_sparepart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_column="1"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_weight="2"
+                    android:text="Item"/>
+                <TextView
+                    android:layout_column="2"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="Jumlah"/>
+                <TextView
+                    android:layout_column="3"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:text="Harga"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#fafafa"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rpt_txt_nama_servis"
+                    android:layout_column="1"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text=""/>
+                <TextView
+                    android:layout_column="2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="1"/>
+                <TextView
+                    android:id="@+id/rpt_txt_harga_servis"
+                    android:layout_column="3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableLayout
+                android:id="@+id/list_sparepart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </TableLayout>
+
+            <TableRow
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_column="1"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:text="Total Biaya"/>
+
+                <TextView
+                    android:layout_column="2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text=""/>
+                <TextView
+                    android:id="@+id/rpt_txt_total_biaya"
+                    android:layout_column="3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/report_card"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        style="@style/LinearLayoutTab">
+
+        <TextView
+            style="@style/TextTitle"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="20dp"
+            android:text="Checklist Penyelesaian Servis"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/content_list"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayoutTab"
+        android:id="@+id/report_ditolak"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tolak_book"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

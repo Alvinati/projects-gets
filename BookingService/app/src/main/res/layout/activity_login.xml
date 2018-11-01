@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+       android:layout_centerVertical="true"
+        android:paddingRight="20dp"
+        >
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/logo_hd"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5997fa"
+            android:textSize="14sp"
+            android:layout_marginBottom="15dp"
+            android:text="Nikmati kemudahan booking online"
+            />
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:text="Silahkan Masuk"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/login_et_email"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d5ffffff"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/login_et_password"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d5ffffff"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:hint="Password" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            />
+        <ProgressBar
+            android:id="@+id/loginBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="50dp"
+            android:progress="25"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_blm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Belum memiliki akun? "
+            />
+        <TextView
+            android:id="@+id/login_daftar"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txt_blm"
+            android:text="Daftar"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBaseline="@id/txt_blm"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

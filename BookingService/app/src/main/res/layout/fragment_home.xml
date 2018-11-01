@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   <!-- <com.synnapps.carouselview.CarouselView
+        android:id="@+id/promoView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:fillColor="#FFFFFF"
+        app:slideInterval="3000"
+        /> -->
+
+    <com.glide.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <ImageView
+        android:id="@+id/image_pengganti"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <TextView
+        style="@style/TextTitle"
+        android:layout_marginTop="20dp"
+        android:text="Pilih tanggal booking"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <Spinner
+            android:id="@+id/pilih_jam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:entries="@array/jam"
+            android:layout_toRightOf="@id/waktu_pilihan"
+            android:layout_alignBaseline="@id/waktu_pilihan" />
+
+        <TextView
+            android:id="@+id/waktu_pilihan"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@id/calendarView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Pilih Waktu"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/next1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="16sp"
+            android:layout_below="@id/pilih_jam"
+            android:text="Selanjutnya"
+            android:textAllCaps="false" />
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

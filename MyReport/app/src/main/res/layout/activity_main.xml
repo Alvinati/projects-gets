@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_view"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.co.gets.myreport.main.MainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/colorAccent"
+            android:elevation="4dp"
+            android:theme="@style/ToolbarColoredIcon"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="65dp"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/pb_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:backgroundTint="@android:color/white"
+            android:indeterminateTint="@color/colorAccent"
+            android:indeterminate="true"
+            />
+
+        <ImageView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo"
+            />
+
+        <TableLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+
+               android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/main_btn_apel"
+                    style="@style/MainButton"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/ic_customer_service"
+                    android:text="APEL"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                   android:id="@+id/main_btn_tko"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
+                    style="@style/MainButton"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_hat"
+                    android:text="TKO"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/main_btn_invoice"
+                    style="@style/MainButton"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginBottom="10dp"
+                    android:drawableTop="@drawable/ic_invoice_good"
+                    android:text="INVOICE"
+                    />
+
+                <TextView
+                    android:id="@+id/main_btn_emergency"
+                    style="@style/MainButton"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/ic_siren"
+                    android:text="EMERGENCY"
+                    android:textColor="@android:color/holo_red_dark"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

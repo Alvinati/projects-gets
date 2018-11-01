@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/relative_apel"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_width="300dp"
+    android:padding="16dp"
+    android:orientation="vertical">
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Apel"
+             android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/colorPrimaryDark"
+            style="@style/TextAppearance.AppCompat.Medium"
+            />
+        <RadioGroup
+            android:id="@+id/apel_radio_group"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/chk1"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
+                android:text="Lengkap" />
+
+            <RadioButton
+                android:id="@+id/chk2"
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:text="Belum Lengkap" />
+
+            <RadioButton
+                android:id="@+id/chk3"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:text="Tidak Lengkap" />
+        </RadioGroup>
+
+    <AutoCompleteTextView
+        android:textSize="16sp"
+        android:id="@+id/apel_ac_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Region"
+        android:layout_marginTop="20dp"
+        android:dropDownHeight="100dp"
+        />
+
+    <EditText
+        android:textSize="16sp"
+        android:id="@+id/apel_et_kci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kantor Cabang Induk"
+        />
+    <EditText
+        android:textSize="16sp"
+        android:id="@+id/apel_et_kcp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kantor Cabang Pembantu"
+        />
+
+</LinearLayout>

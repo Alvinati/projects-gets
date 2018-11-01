@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#ededed"
+    tools:context="id.gets.bookingservice.KonfirmasiActivity"
+    >
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            style="@style/TextTitle"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Konfirmasi booking"/>
+
+        <LinearLayout
+            android:id="@+id/card1"
+            style="@style/LinearLayoutTab"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                style="@style/TextTitle"
+                android:text="Data Pemesan"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/cfm_txt_nama"
+                    android:textAllCaps="true"
+                    android:layout_weight="2"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <Button
+                    android:id="@+id/cfm_btn_ubah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UBAH"
+                    android:layout_weight="1"
+                    style="@style/Widget.AppCompat.Light.ActionButton.CloseMode"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="#fafafa"
+                >
+                <TextView
+                    android:text="Email"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/cfm_txt_email"
+                    android:textAllCaps="false"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="#fafafa"
+                >
+                <TextView
+                    android:text="No Handphone"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/cfm_txt_noHp"
+                    android:textAllCaps="false"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayoutTab"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/TextTitle"
+                android:layout_marginBottom="5dp"
+                android:text="Data Mobil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="#fafafa"
+                >
+                <TextView
+                    android:text="Mobil"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/cfm_txt_mobil"
+                    android:textAllCaps="false"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="#fafafa"
+                >
+                <TextView
+                    android:text="No Plat Mobil"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:id="@+id/cfm_txt_noPlat"
+                    android:textAllCaps="false"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/card2"
+            android:layout_below="@id/card1"
+            style="@style/LinearLayoutTab"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/TextTitle"
+                android:text="@string/detil_booking"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Booking"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/TextTanggalBook"
+                    android:id="@+id/cfm_txt_hari"
+                    android:text="Senin"
+                    />
+                <TextView
+                    style="@style/TextTanggalBook"
+                    android:id="@+id/cfm_txt_tanggal"
+                    />
+                <TextView
+                    style="@style/TextTanggalBook"
+                    android:id="@+id/cfm_txt_bulan"
+                    />
+                <TextView
+                    style="@style/TextTanggalBook"
+                    android:id="@+id/cfm_txt_tahun"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/TextTanggalBook"
+                    android:textStyle="normal"
+                    android:text="Pukul"
+                    />
+                <TextView
+                    style="@style/TextTanggalBook"
+                    android:id="@+id/cfm_txt_waktu"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Biaya Servis"/>
+
+            <TableLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="0dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:text="Item"/>
+                    <TextView
+                        android:layout_column="2"
+                        android:layout_width="0dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:text="Jumlah"/>
+                    <TextView
+                        android:layout_column="3"
+                        android:layout_width="0dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:text="Harga"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:background="#fafafa"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/cfm_txt_servis"
+                        android:layout_column="1"
+                        android:layout_width="0dp"
+                        android:textSize="12sp"
+                        android:layout_weight="2" />
+                    <TextView
+                        android:layout_column="2"
+                        android:layout_width="0dp"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:text="1"/>
+                    <TextView
+                        android:id="@+id/cfm_txt_hargaS"
+                        android:layout_column="3"
+                        android:layout_width="0dp"
+                        android:textSize="12sp"
+                        android:layout_weight="1" />
+                </TableRow>
+
+                <TableLayout
+                    android:id="@+id/cfm_list_sparepart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TableLayout>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:background="#fafafa"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="0dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:text="Total Harga"
+                        android:layout_weight="2" />
+                    <TextView
+                        android:layout_column="2"
+                        android:layout_width="0dp"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:id="@+id/cfm_txt_total"
+                        android:layout_column="3"
+                        android:layout_width="0dp"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="1" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/cfm_btn_book"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:text="BOOK SERVIS"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:id="@+id/book_bar"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:backgroundTint="@android:color/white"
+            android:indeterminateTint="@color/colorAccent"
+            android:indeterminate="true" />
+
+    </LinearLayout>
+
+
+</ScrollView>
+

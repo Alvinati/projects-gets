@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_invoice"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_invoice_good"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/invoice_id"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/list_tanggal"
+            android:layout_width="wrap_content"
+            android:text="Selasa, 20 Oktober 2018"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_invoice"
+            android:text="Invoice No."
+            android:layout_below="@id/list_tanggal"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/nomor_invoice"
+            android:layout_toEndOf="@id/txt_invoice"
+            android:layout_toRightOf="@id/txt_invoice"
+            android:layout_alignBaseline="@id/txt_invoice"
+            android:text="1234"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/nomor_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#dadada"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

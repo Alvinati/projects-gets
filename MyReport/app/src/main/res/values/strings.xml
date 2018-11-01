@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Maybank SS Report</string>
+    <string name="title_activity_invoice">InvoiceActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="kata_sandi_baru">kata sandi baru</string>
+    <string name="ulangi_kata_sandi">ulangi kata sandi</string>
+    <string name="profile_picture">profile picture</string>
+    <string name="edit">edit</string>
+
+    <string-array name="emergency">
+        <item>Kebakaran</item>
+        <item>Teror</item>
+        <item>Perampokan</item>
+        <item>Kebanjiran</item>
+        <item>Gempa</item>
+        <item>Demo</item>
+        <item>Listrik Mati</item>
+        <item>ATM Vandall</item>
+    </string-array>
+
+    <string-array name="region">
+        <item>Sumatera Utara</item>
+        <item>Sumatera Selatan</item>
+        <item>Jawa Barat</item>
+        <item>Jakarta 1</item>
+        <item>Jakarta 2</item>
+        <item>Jateng</item>
+        <item>Jatim dan Bali Nusra</item>
+        <item>Kalimantan</item>
+        <item>Sulawesi dan IBT</item>
+    </string-array>
+
+    <string-array name="group">
+        <item>Vendor</item>
+        <item>CMS</item>
+    </string-array>
+</resources>

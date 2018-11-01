@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Booking Service</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="logo_name">Tunas Daihatsu</string>
+    <string name="dot">dot</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="detil_booking">Detil booking</string>
+    <string name="tolak_book">Mohon maaf, Anda tidak dapat melakukan booking pada waktu tersebut,
+        mohon untuk memilih waktu booking lainnya, Terima kasih
+    </string>
+
+    <string-array name="jam">
+        <item>08:00 AM</item>
+        <item>09:00 AM</item>
+        <item>10:00 AM</item>
+        <item>13:00 PM</item>
+        <item>14:00 PM</item>
+        <item>15:00 PM</item>
+        <item>16:00 PM</item>
+        <item>17:00 PM</item>
+    </string-array>
+
+
+</resources>

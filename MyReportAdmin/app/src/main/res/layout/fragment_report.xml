@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dadada"
+    tools:context="id.co.mine.myreportadmin.fragments.ReportFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TableLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/main_btn_apel"
+                    style="@style/MainButton"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/ic_customer_service"
+                    android:text="APEL"
+                    />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/main_btn_tko"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
+                    style="@style/MainButton"
+                    android:drawableTop="@drawable/ic_hat"
+                    android:text="TKO"
+                    />
+
+                <TextView
+                    android:id="@+id/main_btn_invoice"
+                    style="@style/MainButton"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableTop="@drawable/ic_invoice_good"
+                    android:text="INVOICE"
+                    />
+
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1800dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <WebView
+                android:id="@+id/wv_graph"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

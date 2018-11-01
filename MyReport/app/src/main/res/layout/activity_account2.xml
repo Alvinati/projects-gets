@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="id.co.gets.myreport.main.AccountActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/profilepict"
+            android:contentDescription="@string/profile_picture"
+            android:background="@drawable/main_button"
+            android:layout_width="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_add_photo"
+            />
+        <TextView
+            android:id="@+id/acc_txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profilepict"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            style="@style/TextAppearance.AppCompat.Medium"
+            />
+        <TextView
+            android:id="@+id/acc_txt_company"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/acc_txt_username"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            style="@style/TextAppearance.AppCompat.Caption"
+            />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+        <ProgressBar
+            android:id="@+id/pb_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:backgroundTint="@android:color/white"
+            android:indeterminateTint="@color/colorAccent"
+            android:indeterminate="true"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/acc_btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_gravity="end"
+            android:contentDescription="edit_button"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/acc_ti_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/acc_et_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Username"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/acc_ti_nama"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/acc_et_nama"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nama Lengkap"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/acc_ti_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/acc_et_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/acc_ti_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/acc_et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nomor Handphone"
+                android:inputType="phone"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/acc_ti_kcp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/acc_et_kcp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Kantor Cabang Pembantu"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/acc_ti_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/acc_et_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Kantor Cabang Induk"
+                android:inputType="textMultiLine"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/acc_ti_region"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/acc_et_region"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Region"
+                android:inputType="text"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/acc_btn_save"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/custom_button"
+            />
+
+    </LinearLayout>
+</ScrollView>

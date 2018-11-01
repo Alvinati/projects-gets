@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="200dp"
+    android:layout_width="300dp"
+    android:scrollbars="none"
+    >
+
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+    <View
+        android:background="#dadada"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/notif_detail_tanggal"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+   <TableLayout
+       android:layout_below="@id/notif_detail_tanggal"
+       android:layout_width="match_parent"
+       android:padding="20dp"
+       android:layout_height="match_parent">
+       <TableRow
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:layout_marginBottom="5dp"
+           >
+           <TextView
+               android:text="Pengirim"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               />
+           <TextView
+               android:layout_weight="0.3"
+               android:layout_width="0dp"
+               android:text=": "
+               />
+           <TextView
+               android:id="@+id/notif_detail_vendor"
+               android:layout_weight="2"
+               android:layout_width="0dp"
+               />
+       </TableRow>
+
+       <TableRow
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           >
+           <TextView
+               android:text="Pesan"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               />
+           <TextView
+               android:layout_weight="0.3"
+               android:layout_width="0dp"
+               android:text=": "
+               />
+           <TextView
+               android:id="@+id/notif_detail_pesan"
+               android:layout_weight="2"
+               android:layout_width="0dp"
+               />
+       </TableRow>
+
+
+   </TableLayout>
+
+</RelativeLayout>
+</ScrollView>

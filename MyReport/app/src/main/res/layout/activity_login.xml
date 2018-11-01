@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_view"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context="id.co.gets.myreport.main.LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Logo"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_logo"
+        android:layout_centerInParent="true"
+        android:text="Selamat Datang"
+        style="@style/TextAppearance.AppCompat.Title"
+        />
+
+    <TextView
+        android:id="@+id/silahkan_login"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:layout_centerInParent="true"
+        android:text="Silahkan Login"
+        style="@style/TextAppearance.AppCompat.Small"
+        />
+
+    <EditText
+        android:id="@+id/login_et_email"
+        android:layout_below="@id/silahkan_login"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/rounded_corner3"
+        />
+
+    <EditText
+        android:id="@+id/login_et_password"
+        android:layout_below="@id/login_et_email"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/rounded_corner3"
+        />
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_below="@id/login_et_password"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/custom_button"
+        />
+
+        <Button
+            android:id="@+id/reset_btn"
+            android:text="Lupa password?"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btn_login"
+            android:textAllCaps="false"
+            android:layout_marginTop="-10dp"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/pb_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reset_btn"
+        android:layout_centerHorizontal="true"
+        android:progressTint="@color/colorAccent"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/login_txt_regis"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun?  "
+            style="@style/TextAppearance.AppCompat.Caption"
+            />
+        <TextView
+            android:id="@+id/login_btn_daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/ripple_bacground"
+            android:padding="5dp"
+            style="@style/TextAppearance.AppCompat.Caption"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

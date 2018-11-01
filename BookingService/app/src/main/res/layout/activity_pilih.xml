@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ededed"
+    tools:context="id.gets.bookingservice.PilihActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:backgroundTint="@android:color/white"
+            android:indeterminateTint="@color/colorAccent"
+            android:indeterminate="true"
+            />
+
+
+        <LinearLayout
+            style="@style/LinearLayoutTab"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_pilih_mobil"
+                style="@style/TextTitle"
+                android:textSize="14sp"
+                android:text="Jenis Mobil" />
+
+            <Spinner
+                android:id="@+id/sp_pilih_mobil"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextTitle"
+                    android:textSize="12sp"
+                    android:text="Nomor Plat: "
+                    />
+                <EditText
+                    android:id="@+id/et_pilih_plat"
+                    android:layout_width="100dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/text_pilih_jasa"
+                style="@style/TextTitle"
+                android:textSize="14sp"
+                android:text="Pilih Jasa Servis" />
+
+            <Spinner
+                android:id="@+id/sp_pilih_jasa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/TextTitle"
+                    android:textSize="12sp"
+                    android:text="Biaya Servis: "
+                    />
+
+                <TextView
+                    android:id="@+id/txt_plh_biayaservis"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayoutTab"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_tambah_sparepart"
+                style="@style/TextTitle"
+                android:textSize="14sp"
+                android:layout_marginBottom="5dp"
+                android:text="Tambah Sparepart" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sp_tambah_sparepart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/sp_tambah_sparepart"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_plh_jumlah"
+                        style="@style/TextTitle"
+                        android:textSize="12sp"
+                        android:text="Jumlah"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_pilih_jumlah"
+                        android:layout_width="50dp"
+                        android:text="1"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/bt_tambah_sparepart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sp_tambah_sparepart"
+                    android:layout_alignParentEnd="true"
+                    android:text="Tambah"
+                    android:textAllCaps="false"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            style="@style/LinearLayoutTab"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/pilih_booking"
+                android:text="List Sparepart"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                style="@style/TextTitle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/linear_pilihan"
+                android:layout_below="@id/pilih_booking"
+                android:layout_height="match_parent">
+                <include layout="@layout/content_list" />
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/next2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

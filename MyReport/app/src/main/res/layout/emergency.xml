@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_width="300dp"
+    android:padding="16dp"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/emer_et_message"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:inputType="textMultiLine"
+        android:hint="Tulis pesan Anda disini"
+        />
+    <Spinner
+        android:id="@+id/sp_emergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <AutoCompleteTextView
+        android:textSize="16sp"
+        android:id="@+id/emer_ac_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Region"
+        android:layout_marginTop="20dp"
+        android:dropDownHeight="100dp"
+        />
+    <EditText
+        android:textSize="16sp"
+        android:id="@+id/emer_et_kci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kantor Cabang Induk"
+        />
+    <EditText
+        android:textSize="16sp"
+        android:id="@+id/emer_et_kcp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kantor Cabang Pembantu"
+        />
+
+
+</LinearLayout>

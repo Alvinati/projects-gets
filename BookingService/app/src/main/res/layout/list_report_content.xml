@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/rpt_txt_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="20" />
+
+    <TextView
+        android:id="@+id/rpt_txt_bulan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@id/rpt_txt_tanggal"
+        android:textColor="@color/colorAccent"
+        android:text="Sept" />
+
+    <TextView
+        android:id="@+id/rpt_txt_tahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5px"
+        android:layout_toRightOf="@id/rpt_txt_bulan"
+        android:textColor="@color/colorAccent"
+        android:text="2018" />
+
+    <LinearLayout
+        android:id="@+id/pilihan_servis"
+        android:layout_below="@id/rpt_txt_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/servis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:textAppearanceListItem"
+            android:text="Jenis Servis"
+            android:layout_weight="2"
+            android:textColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/baris2"
+        android:layout_below="@id/pilihan_servis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <TextView
+        android:id="@+id/nama_produk"
+        style="?android:textAppearanceSmall"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="Merk Mobil" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:text="DONE" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/kode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/baris2"
+        android:layout_marginTop="10dp"
+        android:text="Kode Booking: "
+        />
+    <TextView
+        android:id="@+id/text_uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="true"
+        android:layout_alignBaseline="@id/kode"
+        android:layout_toRightOf="@id/kode"
+        android:text="XX2P0"
+        />
+
+</RelativeLayout>

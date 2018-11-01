@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="320dp"
+    android:background="@android:color/white"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/tko_header"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/tko_judul"
+            android:layout_width="0dp"
+            android:text="Weekly Report"
+            android:textColor="@color/colorAccent"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:contentDescription="close_button"
+            android:id="@+id/tko_close"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_cancel_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bulan :  "
+        android:layout_alignBaseline="@id/tko_bulan"
+        android:layout_below="@id/tko_header"
+        android:layout_toLeftOf="@id/tko_bulan"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/tko_bulan"
+        android:layout_width="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:textColorHint="@android:color/darker_gray"
+        android:singleLine="true"
+        android:inputType="text"
+        android:layout_below="@id/tko_header"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:layout_below="@id/tko_bulan"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="minggu ke-"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:text=": "
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="gravity"
+                android:gravity="end"
+                />
+
+            <EditText
+                android:id="@+id/tko_week"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:textSize="12sp"
+                android:hint="1"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@android:color/darker_gray"
+                android:singleLine="true"
+                android:inputType="number"
+                android:padding="3dp"
+                android:background="@drawable/rounded_corner3"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/labelNonShift"
+                android:text="Paket A"
+                android:textSize="12sp"
+                android:layout_width="0dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:text=": "
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="gravity"
+                android:gravity="end"
+                />
+
+            <EditText
+                android:id="@+id/tko_nonshift"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:hint="5"
+                android:textAlignment="center"
+                android:padding="3dp"
+                android:background="@drawable/rounded_corner3"
+                android:textColorHint="@android:color/darker_gray"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/labelShift"
+                android:text="Paket B"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:text=": "
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="gravity"
+                android:gravity="end"
+                />
+
+            <EditText
+                android:id="@+id/tko_shift"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:hint="10"
+                android:textAlignment="center"
+                android:textColorHint="@android:color/darker_gray"
+                android:singleLine="true"
+                android:padding="3dp"
+                android:background="@drawable/rounded_corner3"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+        </TableRow>
+    </TableLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_tko"
+        android:layout_above="@id/tko_btn_kirim"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@android:color/white"
+        android:indeterminateTint="@color/colorAccent"
+        android:indeterminate="true"
+        />
+
+    <TextView
+        android:id="@+id/tko_btn_kirim"
+       style="@style/customButton"
+        android:text="KIRIM"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+      />
+
+</RelativeLayout>
